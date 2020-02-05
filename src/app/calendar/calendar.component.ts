@@ -51,4 +51,7 @@ calendar: Week[]
     }
     this.calendar = calendar
   }
+  select(day: moment.Moment) {
+    this.dateService.changeDate(day)
+  }
 }
